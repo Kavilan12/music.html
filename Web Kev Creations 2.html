@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music Website</title>
+	<link rel="stylesheet" type="text/css" href="style 10.css">
+</head>
+<body>
+   <div class="container">
+   	   <div class="navbar">
+   	   	  <img src="https://images.unsplash.com/photo-1524678606370-a47ad25cb82a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGVhZHBob25lc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" class="logo">
+   	   	  <ul>
+   	   	  	<li><a href="">HOME</a></li>
+   	   	  	<li><a href="about.html">ABOUT</a></li>
+   	   	  	<li><a href="contact.html">CONTACT</a></li>
+   	   	  	<li><a href="product.html">PRODUCT</a></li>
+   	   	  	<li><a href="other songs.html">OTHER SONGS</a></li>
+   	   	  </ul>
+   	   </div>
+   	   <div class="content">
+   	   	  <div class="left-col">
+   	   	  	<h1>The<br> Real<br> Sound</h1>
+   	   	  </div>
+   	   	  <div class="right-col">
+   	   	  	<p>Click Here To Listen</p>
+   	   	  	<img width="50px" height="50px;" src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c4f9.png" id="icon">
+   	   	  </div>
+   	   </div>
+   </div>
+   <audio id="mysong">
+   	   <source src="dj_gratatata.mp3" type="audio/mp3">
+   </audio>
+   <script type="text/javascript">
+   	   var mysong=document.getElementById("mysong")
+   	   var icon=document.getElementById("icon")
+
+   	   icon.onclick=function(){
+   	   	   if(mysong.paused){
+   	   	   	 mysong.play()
+   	   	   	 icon.src="https://cdn.pixabay.com/photo/2018/05/01/07/20/music-pause-icon-3364870_1280.png"
+   	   	   }else{
+   	   	   	mysong.pause();
+   	   	   	icon.src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c4f9/play.png"
+   	   	   }
+   	   }
+   </script>
+</body>
+</html>
